@@ -1,161 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Stock Market Fundamentals</title>
 
-<title>Trading Community</title>
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      
+      fbq('init', '4426850867573127'); 
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=4426850867573127&ev=PageView&noscript=1"/>
+    </noscript>
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
 
-fbq('init', '2027397264819185');
-fbq('track', 'PageView');
-fbq('track', 'ViewContent');
-</script>
+        body {
+            background-color: #f4f7f6;
+            color: #1e293b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
 
-<style>
-body{
-margin:0;
-font-family:Arial;
-text-align:center;
-color:white;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-}
+        .card-container {
+            width: 100%;
+            max-width: 440px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 24px;
+            padding: 28px 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
 
-/* TOP BAR */
-.topbar{
-background:#ffd700;
-color:#000;
-padding:12px;
-font-weight:900;
-font-size:17px;
-}
+        .main-title {
+            font-size: 22px;
+            font-weight: 800;
+            color: #0f172a;
+            line-height: 1.3;
+            margin-bottom: 10px;
+        }
 
-/* PROFILE */
-.profile{
-margin-top:25px;
-}
-.profile img{
-width:130px;
-height:130px;
-border-radius:50%;
-border:5px solid #ffd700;
-}
+        .sub-desc {
+            font-size: 14px;
+            color: #475569;
+            line-height: 1.5;
+            margin-bottom: 22px;
+        }
 
-/* TEXT */
-.title{
-font-size:24px;
-font-weight:900;
-margin-top:10px;
-color:#ffd700;
-}
-.subtitle{
-font-size:16px;
-font-weight:700;
-}
-.counter{
-margin-top:8px;
-font-weight:700;
-}
+        /* Learning Card */
+        .preview-box {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            border-radius: 16px;
+            padding: 18px;
+            color: #ffffff;
+            text-align: left;
+            margin-bottom: 22px;
+        }
 
-/* BOX */
-.box{
-background:rgba(0,0,0,0.4);
-margin:12px 20px;
-padding:12px;
-border-radius:10px;
-font-weight:700;
-}
+        .preview-tag {
+            display: inline-block;
+            background: #2563eb;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
 
-/* BUTTON */
-.join-btn{
-background:#ffd700;
-color:#000;
-padding:16px;
-margin:20px;
-border-radius:12px;
-font-size:18px;
-font-weight:900;
-cursor:pointer;
-animation:pulse 1.5s infinite;
-}
+        .module-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
 
-@keyframes pulse{
-0%{transform:scale(1)}
-50%{transform:scale(1.05)}
-100%{transform:scale(1)}
-}
+        .module-item:last-child {
+            margin-bottom: 0;
+        }
 
-/* ADS */
-.ads{
-margin:20px 0;
-}
-.ads a{
-background:black;
-color:#ffd700;
-padding:10px 18px;
-border-radius:20px;
-text-decoration:none;
-font-size:13px;
-}
+        .dot {
+            height: 10px;
+            width: 10px;
+            background-color: #22c55e;
+            border-radius: 50%;
+            display: inline-block;
+        }
 
-/* DISCLAIMER */
-.disclaimer{
-background:#000;
-color:#ccc;
-font-size:12px;
-padding:14px;
-line-height:1.6;
-}
-</style>
+        /* Features List */
+        .features-sec {
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        .features-sec h4 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #0f172a;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 13.5px;
+            color: #334155;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .check-mark {
+            color: #16a34a;
+            font-weight: bold;
+        }
+
+        /* Main Join Button */
+        .join-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            background: #2563eb;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 50px;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            transition: background 0.2s;
+        }
+
+        .join-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .sub-btn-text {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Disclaimer Box */
+        .disclaimer-box {
+            background-color: #fffbeb;
+            border: 1px solid #fef08a;
+            border-radius: 12px;
+            padding: 12px;
+            text-align: left;
+            font-size: 11px;
+            color: #854d0e;
+            line-height: 1.4;
+        }
+
+        .disclaimer-box strong {
+            color: #713f12;
+        }
+
+        .footer-text {
+            margin-top: 18px;
+            font-size: 11px;
+            color: #94a3b8;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="profile">
-<img src="profile.jpg" alt="Profile">
-</div>
+    <div class="card-container">
+        
+        <h1 class="main-title">Learn Stock Market Fundamentals & Risk Control</h1>
+        <p class="sub-desc">A structured learning program designed to help you understand market mechanics, technical analysis, and capital protection from scratch.</p>
 
-<div class="title">Trade With Mohit Agrawal</div>
-<div class="subtitle">Market Insights & Learning</div>
-<div class="counter">👥 2,300+ traders joined today</div>
+        <!-- Module Preview Box -->
+        <div class="preview-box">
+            <span class="preview-tag">Live Learning Session Preview</span>
+            <div class="module-item">
+                <span class="dot"></span>
+                <span>Module 1: Chart Reading & Trends</span>
+            </div>
+            <div class="module-item">
+                <span class="dot"></span>
+                <span>Module 2: Risk Management Framework</span>
+            </div>
+        </div>
 
-<div class="box">📊 Market Analysis & Learning</div>
-<div class="box">📈 Intraday & Options Discussion</div>
-<div class="box">📚 14+ Years Market Experience</div>
+        <!-- Features List -->
+        <div class="features-sec">
+            <h4>What You Will Discover:</h4>
+            <div class="feature-item">
+                <span class="check-mark">✓</span>
+                <span>Understand how the stock market operates fundamentally.</span>
+            </div>
+            <div class="feature-item">
+                <span class="check-mark">✓</span>
+                <span>Learn proper risk-to-reward calculation techniques.</span>
+            </div>
+            <div class="feature-item">
+                <span class="check-mark">✓</span>
+                <span>Master trading psychology & avoid common emotional mistakes.</span>
+            </div>
+        </div>
 
-<div class="join-btn" id="joinBtn">JOIN TELEGRAM CHANNEL</div>
+        <!-- Button -->
+        <a id="telegramLink" href="https://t.me/+X3ZNx-vFqxY2ZTFl" class="join-btn" onclick="trackButtonClick()">
+            Join Free Telegram Group Chat 🚀
+        </a>
+        <p class="sub-btn-text">Open for learners across India. No financial tips or advisory provided.</p>
 
-<div class="ads">
-<a href="https://t.me/+GZeKfXdd9lIxZTJl">Advertised by elitemarketing.tech</a>
-</div>
+        <!-- Compliance Disclaimer -->
+        <div class="disclaimer-box">
+            ⚠️ <strong>Important Disclaimer:</strong><br>
+            This training session is strictly for <strong>educational and informational purposes only</strong>. We do not offer any stock tips, advisory services, portfolio management, or guarantees of returns. Stock market investments carry inherent risks. Please read all related documents carefully before participating.
+        </div>
 
-<script>
-const tgLink="https://t.me/+FbqZCLER6y4zYTBl";
+        <div class="footer-text">
+            © 2026 MarketEd Academy. All Rights Reserved.<br>Educational Initiative • Independent Learning Program
+        </div>
 
-document.getElementById("joinBtn").addEventListener("click",function(){
-fbq('track','Lead',{ value:10, currency:'INR' });
-window.location.href = tgLink;
-});
-</script>
+    </div>
 
-<div class="disclaimer">
-<strong>Disclaimer:</strong><br>
-This community is for educational and informational purposes only.
-We do not provide financial or investment advice.
-Trading in financial markets involves risk.
-Always consult a qualified financial advisor before making any investment decisions.
-</div>
+    <!-- JavaScript tracking -->
+    <script>
+        let telegramUrl = "https://t.me/+X3ZNx-vFqxY2ZTFl"; 
+        document.getElementById("telegramLink").href = telegramUrl;
+
+        function trackButtonClick() {
+            if(typeof fbq !== 'undefined') {
+                fbq('trackCustom', 'TelegramBtnClick'); 
+                fbq('track', 'Lead'); // 'Subscribe' se behtar 'Lead' Meta Policy ke liye safe mana jata hai
+            }
+        }
+    </script>
 
 </body>
 </html>
