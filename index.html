@@ -153,7 +153,8 @@
             padding: 16px;
             border-radius: 50px;
             box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-            transition: background 0.2s;
+            transition: background 0.2s, opacity 0.2s;
+            cursor: pointer;
         }
 
         .join-btn:hover {
@@ -228,7 +229,7 @@
         </div>
 
         <!-- Button -->
-        <a id="telegramLink" href="https://t.me/+X3ZNx-vFqxY2ZTFl" class="join-btn" onclick="trackButtonClick()">
+        <a id="telegramLink" href="javascript:void(0);" class="join-btn" onclick="trackButtonClick()">
             Join Free Telegram Group Chat 🚀
         </a>
         <p class="sub-btn-text">Open for learners across India. No financial tips or advisory provided.</p>
@@ -245,15 +246,32 @@
 
     </div>
 
-    <!-- JavaScript tracking -->
+    <!-- JavaScript tracking & redirection -->
     <script>
-        let telegramUrl = "https://t.me/+X3ZNx-vFqxY2ZTFl"; 
-        document.getElementById("telegramLink").href = telegramUrl;
+        var isClicked = false; 
+        var telegramUrl = "https://t.me/+X3ZNx-vFqxY2ZTFl"; // Aapka Naya Telegram Link
 
         function trackButtonClick() {
-            if(typeof fbq !== 'undefined') {
-                fbq('trackCustom', 'TelegramBtnClick'); 
-                fbq('track', 'Lead'); // 'Subscribe' se behtar 'Lead' Meta Policy ke liye safe mana jata hai
+            if (!isClicked) {
+                isClicked = true; 
+
+                // 1. Facebook Pixel Events
+                if (typeof fbq !== 'undefined') {
+                    fbq('trackCustom', 'TelegramBtnClick'); 
+                    fbq('track', 'Subscribe'); 
+                }
+
+                // 2. Button Visual Disable Effect
+                var btn = document.getElementById('telegramLink');
+                if (btn) {
+                    btn.style.pointerEvents = 'none'; 
+                    btn.style.opacity = '0.7';       
+                }
+
+                // 3. 300ms Redirect to Telegram
+                setTimeout(function() {
+                    window.location.href = telegramUrl;
+                }, 300);
             }
         }
     </script>
