@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn Stock Market Fundamentals</title>
-
-    <!-- Meta Pixel Code -->
+    <title>DILPREET OFFICIAL 🇮🇳
+</title>
+    
+    <!-- Meta Pixel Base Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      
-      fbq('init', '1064744593204331'); 
-      fbq('track', 'PageView');
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '1064744593204331'); 
+    fbq('track', 'PageView');
     </script>
     <noscript>
       <img height="1" width="1" style="display:none"
@@ -25,254 +26,401 @@
     </noscript>
 
     <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: rgba(18, 26, 43, 0.75);
+            --primary-accent: #10b981;
+            --blue-accent: #2563eb;
+            --gold-accent: #f59e0b;
+            --text-main: #ffffff;
+            --text-sub: #94a3b8;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
 
         body {
-            background-color: #f4f7f6;
-            color: #1e293b;
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.15) 0%, transparent 60%),
+                radial-gradient(circle at 80% 100%, rgba(37, 99, 235, 0.12) 0%, transparent 50%);
+            color: var(--text-main);
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 20px;
+            padding: 20px 15px;
         }
 
-        .card-container {
+        .container {
             width: 100%;
-            max-width: 440px;
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 24px;
-            padding: 28px 20px;
+            max-width: 420px;
             text-align: center;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
         }
 
-        .main-title {
-            font-size: 22px;
+        /* Profile & Avatar */
+        .profile-wrapper {
+            position: relative;
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 16px;
+        }
+
+        .profile-img-box {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            padding: 3px;
+            background: linear-gradient(135deg, var(--primary-accent), var(--blue-accent));
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+        }
+
+        .profile-img-box img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .live-badge {
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+            background: #064e3b;
+            border: 2px solid #10b981;
+            color: #34d399;
+            font-size: 10px;
             font-weight: 800;
-            color: #0f172a;
-            line-height: 1.3;
-            margin-bottom: 10px;
-        }
-
-        .sub-desc {
-            font-size: 14px;
-            color: #475569;
-            line-height: 1.5;
-            margin-bottom: 22px;
-        }
-
-        /* Learning Card */
-        .preview-box {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            border-radius: 16px;
-            padding: 18px;
-            color: #ffffff;
-            text-align: left;
-            margin-bottom: 22px;
-        }
-
-        .preview-tag {
-            display: inline-block;
-            background: #2563eb;
-            color: #fff;
-            font-size: 12px;
-            font-weight: 700;
-            padding: 4px 12px;
+            padding: 2px 8px;
             border-radius: 20px;
-            margin-bottom: 12px;
-        }
-
-        .module-item {
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 8px;
+            gap: 4px;
+            text-transform: uppercase;
         }
 
-        .module-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .dot {
-            height: 10px;
-            width: 10px;
-            background-color: #22c55e;
+        .pulse-dot {
+            width: 6px;
+            height: 6px;
+            background-color: #34d399;
             border-radius: 50%;
-            display: inline-block;
+            animation: pulse-ring 1.5s infinite;
         }
 
-        /* Features List */
-        .features-sec {
-            text-align: left;
-            margin-bottom: 24px;
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(52, 211, 153, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
         }
 
-        .features-sec h4 {
-            font-size: 15px;
+        /* Titles */
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        .subtitle-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 6px 14px;
+            border-radius: 30px;
+            color: #60a5fa;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 22px;
+        }
+
+        .checkmark {
+            color: var(--primary-accent);
+        }
+
+        /* Features Grid */
+        .card-box {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 18px 16px;
+            margin-bottom: 16px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-title {
+            color: #38bdf8;
+            font-size: 13px;
             font-weight: 700;
-            margin-bottom: 12px;
-            color: #0f172a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 14px;
         }
 
         .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 12px 10px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 12px;
+            color: #e2e8f0;
             display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            font-size: 13.5px;
-            color: #334155;
-            margin-bottom: 10px;
-            line-height: 1.4;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            font-weight: 500;
         }
 
-        .check-mark {
-            color: #16a34a;
-            font-weight: bold;
+        .feature-item .icon {
+            font-size: 18px;
         }
 
-        /* Main Join Button */
-        .join-btn {
+        .highlight-banner {
+            background: linear-gradient(90deg, rgba(245, 158, 11, 0.15), rgba(245, 158, 11, 0.05));
+            border: 1px dashed rgba(245, 158, 11, 0.4);
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #fcd34d;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            width: 100%;
-            background: #2563eb;
+            gap: 6px;
+        }
+
+        /* Analysis Box */
+        .analysis-box {
+            text-align: left;
+        }
+
+        .analysis-title {
             color: #ffffff;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
-            text-decoration: none;
-            padding: 16px;
-            border-radius: 50px;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-            transition: background 0.2s, opacity 0.2s;
-            cursor: pointer;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        .join-btn:hover {
-            background: #1d4ed8;
-        }
-
-        .sub-btn-text {
+        .analysis-desc {
+            color: var(--text-sub);
             font-size: 12px;
-            color: #64748b;
-            margin-top: 8px;
+            line-height: 1.5;
+        }
+
+        /* CTA Button */
+        .cta-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 800;
+            padding: 18px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 25px rgba(16, 185, 129, 0.5);
+            transition: all 0.2s ease;
+            margin-bottom: 8px;
+            animation: button-glow 2s infinite alternate;
+        }
+
+        @keyframes button-glow {
+            0% { box-shadow: 0 0 15px rgba(16, 185, 129, 0.4); }
+            100% { box-shadow: 0 0 30px rgba(16, 185, 129, 0.8); }
+        }
+
+        .cta-btn:active {
+            transform: scale(0.97);
+        }
+
+        .sub-cta-text {
+            color: var(--text-sub);
+            font-size: 12px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        /* Quote Footer */
+        .quote-card {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            padding: 12px;
+            margin-top: 10px;
             margin-bottom: 20px;
         }
 
-        /* Disclaimer Box */
-        .disclaimer-box {
-            background-color: #fffbeb;
-            border: 1px solid #fef08a;
-            border-radius: 12px;
-            padding: 12px;
-            text-align: left;
+        .quote-text {
+            color: #94a3b8;
             font-size: 11px;
-            color: #854d0e;
+            font-style: italic;
             line-height: 1.4;
         }
 
-        .disclaimer-box strong {
-            color: #713f12;
+        /* Managed Tag */
+        .managed-tag {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 14px;
+            color: #475569;
+            font-size: 11px;
         }
 
-        .footer-text {
-            margin-top: 18px;
-            font-size: 11px;
-            color: #94a3b8;
+        .managed-link {
+            color: #60a5fa;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .managed-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <div class="card-container">
+    <div class="container">
+        <!-- Profile Image with Live Indicator -->
+        <div class="profile-wrapper">
+            <div class="profile-img-box">
+                <img src="profile.png" alt="DILPREET OFFICIAL 🇮🇳
+">
+            </div>
+            <div class="live-badge">
+                <span class="pulse-dot"></span> LIVE
+            </div>
+        </div>
+
+        <h1>PUSHKAR RAJ THAKUR OFFICIAL™
+
+</h1>
         
-        <h1 class="main-title">Learn Stock Market Fundamentals & Risk Control</h1>
-        <p class="sub-desc">A structured learning program designed to help you understand market mechanics, technical analysis, and capital protection from scratch.</p>
+        <div class="subtitle-badge">
+            📈 Stock Market Expert <span class="checkmark">✓</span> SEBI Registered
+        </div>
 
-        <!-- Module Preview Box -->
-        <div class="preview-box">
-            <span class="preview-tag">Live Learning Session Preview</span>
-            <div class="module-item">
-                <span class="dot"></span>
-                <span>Module 1: Chart Reading & Trends</span>
+        <!-- Main Features -->
+        <div class="card-box">
+            <div class="card-title">NIFTY • BANKNIFTY & STOCK OPTIONS</div>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <span class="icon">📈</span>
+                    <span>100-300 Points Target</span>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">🎯</span>
+                    <span>80-90% Accuracy</span>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">📊</span>
+                    <span>3-4 Daily Calls</span>
+                </div>
+                <div class="feature-item">
+                    <span class="icon">📅</span>
+                    <span>Daily Best Trades</span>
+                </div>
             </div>
-            <div class="module-item">
-                <span class="dot"></span>
-                <span>Module 2: Risk Management Framework</span>
+
+            <div class="highlight-banner">
+                ⚡ Disclaimer:- DAILY FREE DEMO CALL ✅
             </div>
         </div>
 
-        <!-- Features List -->
-        <div class="features-sec">
-            <h4>What You Will Discover:</h4>
-            <div class="feature-item">
-                <span class="check-mark">✓</span>
-                <span>Understand how the stock market operates fundamentally.</span>
+        <!-- Analysis Info Box -->
+        <div class="card-box analysis-box">
+            <div class="analysis-title">
+                🎙️ Live Stock Analysis & Intraday Tips
             </div>
-            <div class="feature-item">
-                <span class="check-mark">✓</span>
-                <span>Learn proper risk-to-reward calculation techniques.</span>
-            </div>
-            <div class="feature-item">
-                <span class="check-mark">✓</span>
-                <span>Master trading psychology & avoid common emotional mistakes.</span>
-            </div>
+            <p class="analysis-desc">
+                Get real-time Nifty/BankNifty levels, option buying calls, and positional trades. Perfect for beginners & pros.
+            </p>
         </div>
 
-        <!-- Button -->
-        <a id="telegramLink" href="javascript:void(0);" class="join-btn" onclick="trackButtonClick()">
-            Join Free Telegram Group Chat 🚀
-        </a>
-        <p class="sub-btn-text">Open for learners across India. No financial tips or advisory provided.</p>
+        <!-- Primary CTA -->
+        <button id="telegramLink" class="cta-btn" onclick="trackButtonClick()">
+            🚀 Join Now & Start Earning
+        </button>
+        <div class="sub-cta-text">🔒 100% Free • Limited Spots</div>
 
-        <!-- Compliance Disclaimer -->
-        <div class="disclaimer-box">
-            ⚠️ <strong>Important Disclaimer:</strong><br>
-            This training session is strictly for <strong>educational and informational purposes only</strong>. We do not offer any stock tips, advisory services, portfolio management, or guarantees of returns. Stock market investments carry inherent risks. Please read all related documents carefully before participating.
+        <!-- Quote Card -->
+        <div class="quote-card">
+            <p class="quote-text">
+                📝 "Trade with discipline, follow our levels, and stay consistent in the market." <br>
+                <strong style="color: #cbd5e1; font-style: normal; display: inline-block; margin-top: 4px;">— GROWX INTRADAY TRADING</strong>
+            </p>
         </div>
 
-        <div class="footer-text">
-            © 2026 MarketEd Academy. All Rights Reserved.<br>Educational Initiative • Independent Learning Program
+        <!-- Managed By Link -->
+        <div class="managed-tag">
+            Managed by <a href="https://t.me/+mp524qElHEQ2YWU1" target="_blank" class="managed-link">elite marketing</a>
         </div>
-
     </div>
 
-    <!-- JavaScript tracking & redirection -->
     <script>
-        var isClicked = false; 
-        var telegramUrl = "https://t.me/+X3ZNx-vFqxY2ZTFl"; // Aapka Naya Telegram Link
+        var pageLoadTime = Date.now();
+        var telegramUrl = "https://t.me/+X3ZNx-vFqxY2ZTFl";
 
         function trackButtonClick() {
-            if (!isClicked) {
-                isClicked = true; 
-
-                // 1. Facebook Pixel Events
-                if (typeof fbq !== 'undefined') {
-                    fbq('trackCustom', 'TelegramBtnClick'); 
-                    fbq('track', 'Subscribe'); 
-                }
-
-                // 2. Button Visual Disable Effect
-                var btn = document.getElementById('telegramLink');
-                if (btn) {
-                    btn.style.pointerEvents = 'none'; 
-                    btn.style.opacity = '0.7';       
-                }
-
-                // 3. 300ms Redirect to Telegram
-                setTimeout(function() {
-                    window.location.href = telegramUrl;
-                }, 300);
+            // 1. Session check: Agar is browser session me click ho chuka h to duplicate pixel fire nahi hoga
+            if (sessionStorage.getItem('already_clicked')) {
+                window.location.href = telegramUrl;
+                return;
             }
+
+            // 2. Anti-Bot check: Page khulne ke 1 second ke andar click karne wale bots ko block karega
+            var currentTime = Date.now();
+            if (currentTime - pageLoadTime < 1000) {
+                sessionStorage.setItem('already_clicked', 'true');
+                window.location.href = telegramUrl;
+                return;
+            }
+
+            // 3. Real User Click: Event fire hoga aur session lock ho jayega
+            sessionStorage.setItem('already_clicked', 'true');
+
+            if (typeof fbq !== 'undefined') {
+                fbq('trackCustom', 'TelegramBtnClick');
+                fbq('track', 'Subscribe');
+            }
+
+            // Button visually disable hoga
+            var btn = document.getElementById('telegramLink');
+            if (btn) {
+                btn.style.pointerEvents = 'none';
+                btn.style.opacity = '0.7';
+            }
+
+            // Redirect delay
+            setTimeout(function() {
+                window.location.href = telegramUrl;
+            }, 300);
         }
     </script>
 
